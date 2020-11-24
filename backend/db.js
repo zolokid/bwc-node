@@ -5,8 +5,8 @@ const mysql = require('mysql');
 
 const HOST = "196.52.105.76";
 const PORT = "7306";
-const USER = "";
-const PASSWORD = "";
+const USER = "root";
+const PASSWORD = "s6JCFpaLNRL42Qq9AGyLeMQK";
 const DATABASE = "bwc"
 
 // Create a Connection Object

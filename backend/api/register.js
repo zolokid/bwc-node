@@ -5,6 +5,9 @@ var Ajv = require('ajv');
 const registerRouter = express.Router(mergeParams=true);
 
 
+const https = require('https');
+
+
 // ENDPOINTS
 //    POST /register <---> register
 
@@ -127,6 +130,9 @@ registerRouter.post('/', (req, res, next) => {
             //   }
 
             // 3. Put to Barawindsor API
+            const agent = new https.Agent({  
+                rejectUnauthorized: false // Disable SSL verification
+               });
             var barawindsorAPI = axios.post(
                 'https://ws.barawindsor.com/api/prospect/createprospect',
                 {
@@ -148,7 +154,8 @@ registerRouter.post('/', (req, res, next) => {
                     headers: {
                         Authorization: 'Basic ' + 'bnByQHByb3NwZWN0Om5wckBwcm9zcGVjdA==',
                         'content-type': 'application/json'
-                    }
+                    },
+                    httpsAgent: agent
                 }
             )
             // 4. Put to Line Notification API

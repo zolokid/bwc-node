@@ -1,5 +1,11 @@
 # bwc-campaign-backend
 
+# Production Build
+`docker-compose up -d`
+
+ Make it rebuild!!
+`docker-compose up --build`
+
 ## Normal Run just 
 `yarn start`  
 
