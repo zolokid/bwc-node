@@ -1,0 +1,29 @@
+@import "../../variables";
+// .topBar{
+//     height: 50px;
+//     // padding-left: 238px;
+
+//     background: $top-bar-color;
+
+//     display:flex;
+//     justify-content: flex;
+//     // align-items: center;
+// }
+
+.navBar {
+    position: relative;
+    height: 80px;
+    padding: 0px 20vw 0px 15vw;
+
+    background: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    svg{
+        cursor: pointer;
+    }
+}
+

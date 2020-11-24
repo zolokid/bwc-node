@@ -1,0 +1,92 @@
+@import "../../variables";
+
+.sectionPromotion {
+    width: 100%;
+    height: auto;
+    
+}
+
+.promotion {
+    width: 100%;
+    height: auto;
+    
+}
+
+
+.containerRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.containerRowNoWrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.containerCol {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.containerColNoWrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.btnShippingOption {
+    background-color: #EAEAEA;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px 10px;
+    font-size: 12px;
+    box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.1);
+
+    h4, h3 {
+        // float: left;
+        font-size: 16px;
+        color: #000000;
+        margin: 5px 0;
+    }
+}
+
+.btnShippingOption:hover {
+    background-color: #D00000;
+    p, h4, h3, h1,qd {
+        color: white;
+    }
+}
+.active {
+    background-color: #D00000;
+    p, div, h4, h3, h1, qd {
+        color: white;
+    }
+}
+.deactive {
+    qd {
+        color: #D00000;
+    }
+}
+
+.previewCar {
+    width: 350px;
+}
+
+.modelCar {
+    width: 250px;
+}
+
+.buttonForCal {
+    background-color: #272727;
+    width: 100px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 7px;
+    color: #ffffff;
+}

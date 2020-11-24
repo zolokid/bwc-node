@@ -1,0 +1,544 @@
+@import "../../variables";
+.boxCalculater {
+    // background-color: rgb(243, 190, 190);
+    // padding: 0 0 50px 0;
+    margin: 0 auto 0 auto;
+    border-radius: 20px;
+    width: 100%;
+    // border: 1px solid black;
+    background-color: #f1f1f1; /* For browsers that do not support gradients */
+    background-image: linear-gradient(225deg, #f1f1f1, #FFFFFF);
+    box-shadow: 0 25px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.inputTextBox {
+    background-color: #F0F0F0;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border-collapse: collapse;
+    border: 1px solid #F0F0F0;
+}
+
+.containerRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.containerRowNoWrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.containerRowDiv {
+    // width: 300px;
+    // border: 1px solid red;
+}
+
+.containerRowRight {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    // border: 1px solid red;
+}
+
+.containerRowCenter {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    // border: 3px solid #ce3bf3;
+}
+
+.containerCol {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+}
+
+.containerRowWidth100 > div {
+    width: 100px;
+  }
+
+.widthFormInput {
+    width: 290px;
+    // margin: 20px;
+}
+
+.formControl {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+
+    p {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding-bottom: 5px;
+    }
+
+    input {
+        background-color: #F0F0F0;
+        height: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        border-collapse: collapse;
+        border: 1px solid #F0F0F0;
+    }
+}
+
+.buttonCalInstallment {
+    background-color: #272727;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    font-size: 0.7rem;
+}
+
+.buttonRegister {
+    background-color: #D00000;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    font-size: 0.7rem;
+}
+
+.mustField {
+    color: red;
+}
+
+.boxRadiusSmall {
+    padding: 10px;
+    border: 1px solid #009473;
+    border-radius: 5px;
+    margin: 2px 10px;
+    cursor: pointer;
+    align-items: center;
+
+    .dateReceiveDesciption {
+        font-size: 0.7rem;
+        padding: 0px;
+        color: #000000;
+    }
+
+    .dateReceive {
+        font-size: 1.0rem;
+        padding: 0px;
+        font-weight: bold;
+        // color: #009473;
+    }
+
+    .price {
+        font-size: 0.75rem;
+        padding: 0px;
+        // color: #009473;
+    }
+}
+
+.selectBoxInput {
+    display: none;
+}
+
+.optionShipping {
+    list-style-type: none;
+}
+
+.selectBoxOption {
+    display: block;
+    padding: 0px;
+}
+
+.active {
+    div {
+        color: white;
+    }
+
+    .boxNameCar {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        background-color: #D00000;
+        border-radius: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px 10px;
+    }
+}
+
+.deactive {
+    div {
+        color: #000000;
+    }
+
+    .boxNameCar {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px 10px;
+    }
+}
+
+.deactive:hover {
+    div {
+        color: white;
+    }
+
+    .boxNameCar {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        background-color: #D00000;
+        border-radius: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.containerColCar {
+    // margin: 0px;
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // padding: 0px 0px 0px 10px;
+}
+
+.center {
+    justify-content: center;
+}
+
+.selectCar {
+    color: black;
+}
+
+.dropdownSelectPercent {
+    // border: 3px solid yellow;
+    // margin-top: 17px;
+
+    label{
+        color: #000000;
+        font-size: 16px;
+        display: block;
+        // border: 3px solid #ce3bf3;
+    }
+
+    select {
+        width: 177px;
+        height:32px;
+        // border: 0.5px solid #ce3bf3;
+        border-radius: 2px;
+        font-size: 12px;
+    }
+
+    .btnSelect {
+      border: 1px solid #944700;
+      background-color: white;
+      width: 197px;
+      padding: 8px;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .btnSelect:hover {
+      background-color: #009473;
+      color: white;
+      border: none;
+    }
+
+    .active {
+      background-color: #009473;
+      color: white;
+      border: none;
+    }
+}
+
+.dropdownSelect{
+    // border: 3px solid yellow;
+    margin: 15px 0;
+
+    label{
+        color: #000000;
+        font-size: 16px;
+        display: block;
+        // border: 3px solid #ce3bf3;
+    }
+
+    select {
+        width: 177px;
+        height:32px;
+        // border: 0.5px solid #ce3bf3;
+        border-radius: 2px;
+        font-size: 12px;
+    }
+
+    .btnSelect {
+      border: 1px solid #944700;
+      background-color: white;
+      width: 197px;
+      padding: 8px;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .btnSelect:hover {
+      background-color: #009473;
+      color: white;
+      border: none;
+    }
+
+    .active {
+      background-color: #009473;
+      color: white;
+      border: none;
+    }
+}
+
+// <<<<<<<<<<========== Start DropDawn =======>>>>>>>>>>>
+.selectBox {
+    display: block;
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+    color: black;
+    border-radius: 20px;
+    background-color: #F0F0F0;
+  }
+  
+  .selectBoxCurrent {
+    position: relative;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .selectBoxCurrent:focus + .selectBoxList {
+    opacity: 1;
+    -webkit-animation-name: none;
+            animation-name: none;
+  }
+  .selectBoxCurrent:focus + .selectBoxList .selectBoxOption {
+    cursor: pointer;
+  }
+  .selectBoxCurrent:focus .select-box__icon {
+    -webkit-transform: translateY(-50%) rotate(180deg);
+            transform: translateY(-50%) rotate(180deg);
+  }
+  .select-box__icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 20px;
+    opacity: 0.3;
+    transition: 0.2s ease;
+  }
+  .selectBoxValue {
+    display: flex;
+  }
+  .selectBoxValue img {
+    z-index: 2;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    width: 80px;
+    height: 50px;
+  }
+ .selectBoxValue svg {
+    z-index: 2;
+    position: absolute;
+    left: 175px;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+  }
+  .selectBoxInput {
+    display: none;
+  }
+  .selectBoxInput:checked + .selectBoxInputText {
+    display: block;
+  }
+
+  .selectBoxInputText {
+    // z-index: -1;
+    display: none;
+    width: 100%;
+    height: 50px;
+    margin: 0 0 0 80px;
+    padding: 15px 15px;
+    font-size: 18px;
+  }
+
+  .selectBoxInputText i {
+    font-size: 18px;
+    padding-right: 10px;
+    margin-left: 5px;
+  }
+  .selectBoxInputText .positionIcon {
+    left: 40px;
+    top: 20px;
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+  }
+
+  .selectBoxList {
+    z-index: 1;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    -webkit-animation-name: HideList;
+            animation-name: HideList;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-timing-function: step-start;
+            animation-timing-function: step-start;
+  }
+  .selectBoxOption {
+    width: 200px;
+    margin: 0;
+    display: block;
+    padding: 20px 10px;
+    background-color: #EDEDED;
+  }
+  .selectBoxOption:hover, .selectBoxOption:focus {
+    color: #546c84;
+    background-color: #fbfbfb;
+  }
+  
+  @-webkit-keyframes HideList {
+    from {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+    to {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+    }
+  }
+  
+  @keyframes HideList {
+    from {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+    to {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+    }
+  }
+  
+    // <<<<<<<<<<========== End DropDawn =======>>>>>>>>>>>
+
+.previewCar {
+    width: 450px;
+}
+
+.boxHighlight {
+    background-color: #A70000;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    color: white;
+    background-image: linear-gradient(225deg, #ff0000, #A70000);
+}
+
+.boxHighlightKey {
+    padding: 10px;
+}
+
+.boxHighlightKeyOr {
+    padding: 20px 10px;
+    font-size: 10px;
+}
+
+.boxHighlightRed {
+    background-color: #A70000;
+    border-radius: 10px;
+    margin: auto 0px auto 0;
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+    // border: 1px solid red;
+    background-image: linear-gradient(225deg, #ff0000, #A70000);
+}
+
+.boxHighlightGreen {
+    background-color: #00A725;
+    border-radius: 10px;
+    margin: auto 0px auto 0;
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+    background-image: linear-gradient(225deg, #00ff37, #00A725);
+    // border: 1px solid red;
+}
+
+.groupContact {
+    position: relative;
+    top: -100px;
+    // border: 1px solid red;
+}
+
+.textPrice {
+    padding: 40px 0 20px 0;
+}
+
+.btnShippingOption {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #009473;
+
+    padding: 10px;
+    margin: 5px 10px;
+
+    font-size: 12px;
+
+    text-align: left;
+
+    h4 {
+        float: left;
+        font-size: 16px;
+        color: #009473;
+    }
+}
+
+.btnShippingOption:hover {
+    background-color: #009473;
+    h4{
+        color: white;
+    }
+}
+.active {
+    background-color: #009473;
+    div, h4 {
+        color: white;
+    }
+}
