@@ -3,10 +3,10 @@
 // Node docs: https://nodejs.org/docs/latest/api/modules.html#modules_caching
 const mysql = require('mysql');
 
-const HOST = "196.52.105.76";
-const PORT = "7306";
-const USER = "root";
-const PASSWORD = "s6JCFpaLNRL42Qq9AGyLeMQK";
+const HOST = "61.91.0.95";
+const PORT = "3306";
+const USER = "dev-npr";
+const PASSWORD = "1q2w#NPR";
 const DATABASE = "bwc"
 
 // Create a Connection Object
