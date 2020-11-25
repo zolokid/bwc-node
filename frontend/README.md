@@ -1,5 +1,7 @@
 # bwc-campaign-landing-page
+
 ## Quick Start
+
 ```sh
 cd bwc-campaign-landing-page
 yarn install
@@ -15,4 +17,6 @@ The build is minified and the filenames include the hashes.<br>
 
 Your app is ready to be deployed.
 
+## To deploy you may use
 
+### `serve -s build -l [PORT]`
