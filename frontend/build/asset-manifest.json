@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/build/static/css/main.3b34e6bb.chunk.css",
+    "main.js": "/build/static/js/main.3c8ac9c1.chunk.js",
+    "main.js.map": "/build/static/js/main.3c8ac9c1.chunk.js.map",
+    "runtime-main.js": "/build/static/js/runtime-main.07e799d6.js",
+    "runtime-main.js.map": "/build/static/js/runtime-main.07e799d6.js.map",
+    "static/js/2.46cb4cc1.chunk.js": "/build/static/js/2.46cb4cc1.chunk.js",
+    "static/js/2.46cb4cc1.chunk.js.map": "/build/static/js/2.46cb4cc1.chunk.js.map",
+    "static/js/3.f11e243f.chunk.js": "/build/static/js/3.f11e243f.chunk.js",
+    "static/js/3.f11e243f.chunk.js.map": "/build/static/js/3.f11e243f.chunk.js.map",
+    "index.html": "/build/index.html",
+    "static/css/main.3b34e6bb.chunk.css.map": "/build/static/css/main.3b34e6bb.chunk.css.map",
+    "static/js/2.46cb4cc1.chunk.js.LICENSE.txt": "/build/static/js/2.46cb4cc1.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/build/static/media/Kanit-Light.68ccb9c4.ttf",
+    "static/media/ativ-2020.6367e012.png": "/build/static/media/ativ-2020.6367e012.png",
+    "static/media/icon-arrow.a2fedb2c.svg": "/build/static/media/icon-arrow.a2fedb2c.svg",
+    "static/media/logo.ccb26957.svg": "/build/static/media/logo.ccb26957.svg",
+    "static/media/promotion.a2eb0e84.svg": "/build/static/media/promotion.a2eb0e84.svg",
+    "static/media/promotion_revo.728cd39a.gif": "/build/static/media/promotion_revo.728cd39a.gif",
+    "static/media/promotion_yaris.460a3bab.gif": "/build/static/media/promotion_yaris.460a3bab.gif",
+    "static/media/revo-2020.726008f9.png": "/build/static/media/revo-2020.726008f9.png",
+    "static/media/revoDouble-2020.7dee65f1.png": "/build/static/media/revoDouble-2020.7dee65f1.png",
+    "static/media/revoSmart-2020.6325e066.png": "/build/static/media/revoSmart-2020.6325e066.png",
+    "static/media/yaris-2020.fc12f377.png": "/build/static/media/yaris-2020.fc12f377.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.07e799d6.js",
+    "static/js/2.46cb4cc1.chunk.js",
+    "static/css/main.3b34e6bb.chunk.css",
+    "static/js/main.3c8ac9c1.chunk.js"
+  ]
+}
