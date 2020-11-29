@@ -3,7 +3,7 @@
 // Node docs: https://nodejs.org/docs/latest/api/modules.html#modules_caching
 const mysql = require('mysql');
 
-const HOST = "61.91.0.95";
+const HOST = "localhost";
 const PORT = "3306";
 const USER = "dev-npr";
 const PASSWORD = "1q2w#NPR";
