@@ -1,0 +1,26 @@
+{
+    "model": ["Revo Standard Cab 2020", "Revo Smart Cab 2020", "Revo Double Cab 2020"],
+    "priceStart": [544000.00, 609000.00, 689000.00],
+    "yaris": {
+        "modelNo": [ "R-S-2.4 Entry 4x2 (6 Speed)","R-S-2.4 Entry 4x2","R-S-2.4 Entry 4x2 (5 Speed)","R-S-2.4 Entry AT 4x2 (6 Speed)","R-S-2.8 Entry 4X2","R-S-2.4 Entry AT 4X2","R-S-2.8 Entry 4x4"],
+        "subModel": [ "2.4 Entry 4x2 (6 Speed)", "2.4 Entry 4x2", "2.4 Entry 4x2 (5 Speed)", "2.4 Entry AT 4x2 (6 Speed)", "2.8 Entry 4X2", "2.4 Entry AT 4X2", "2.8 Entry 4x4" ],
+        "colorName": [ "Drak Gray Mica Metalic", "Silver Metalic", "Super White" ],
+        "price": [ 544000.00, 584000.00, 584000.00, 594000.00, 604000.00, 634000.00, 704000.00 ]
+    },
+    "yarisAtiv": {
+        "modelNo": [ "R-SM-2.4 Entry STD Z Edition 4x2","R-SM-2.4 Entry Z Edition 4x2","R-SM-2.4 Mid STD Z Edition 4x2","R-SM-2.4 Mid Z Edition 4x2","R-SM-2.4 Entry Prerunner 2x4","R-SM-2.4 Mid STD AT Z Edition 4x2","R-SM-2.4 Mid AT Z Edition 4x2","R-SM-2.4 Entry AT Prerunner 2x4","R-SM-2.4 Mid Prerunner 2x4","R-SM-2.4 Mid AT Prerunner 2x4","R-SM-2.4 Mid 4x4","R-SM-2.4 High Prerunner 2x4","R-SM-2.4 High AT Prerunner 2x4","R-SM-2.4 Rocco AT Prerunner 2x4","R-SM-2.8 High 4x4","R-SM-2.8 Rocco AT 4x4"],
+        "subModel": [ "2.4 Entry STD Z Edition 4x2", "2.4 Entry Z Edition 4x2", "2.4 Mid STD Z Edition 4x2", "2.4 Mid Z Edition 4x2", "2.4 Entry Prerunner 2x4", "2.4 Mid STD AT Z Edition 4x2", "2.4 Mid AT Z Edition 4x2", "2.4 Entry AT Prerunner 2x4", "2.4 Mid Prerunner 2x4", "2.4 Mid AT Prerunner 2x4", "2.4 Mid 4x4", "2.4 High Prerunner 2x4", "2.4 High AT Prerunner 2x4", "2.4 Rocco AT Prerunner 2x4", "2.8 High 4x4", "2.8 Rocco AT 4x4" ],
+        "colorName": [ "Attitude Black Mica","Dark Blue Mica","Dark Grey Metallic","Emotional Red II","Oxide Bronze Metallic","Silver Metallic","Super White II","White Pearl Crystal" ],
+        "price": [ 609000.00,624000.00,684000.00,699000.00,707000.00,734000.00,749000.00,757000.00,787000.00,837000.00,862000.00,864000.00,914000.00,949000.00,959000.00,1079000.00 ]
+
+    },
+    "doubleCab": {
+        "modelNo": [ "R-DB-2.4 Entry STD Z Edition 4x2","R-DB-2.4 Entry Z Edition 4x2","R-DB-2.4 Mid STD Z Edition 4x2","R-DB-2.4 Mid Z Edition 4x2","R-DB-2.4 Mid STD AT Z Edition 4x2","R-DB-2.4 Entry Prerunner 2x4","R-DB-2.4 Mid AT Z Edition 4x2","R-DB-2.4 Entry AT Prerunner 2x4","R-DB-2.4 Mid Prerunner 2x4","R-DB-2.4 Mid AT Prerunner 2x4","R-DB-2.4 Mid 4x4","R-DB-2.4 High Prerunner 2x4","R-DB-2.4 High AT Prerunner 2x4","R-DB-2.4 Rocco AT Prerunner 2x4","R-DB-2.8 High 4x4","R-DB-2.8 High AT 4x4","R-DB-2.8 Rocco AT 4x4"],
+        "subModel": [ "2.4 Entry STD Z Edition 4x2","2.4 Entry Z Edition 4x2","2.4 Mid STD Z Edition 4x2","2.4 Mid Z Edition 4x2","2.4 Mid STD AT Z Edition 4x2","2.4 Entry Prerunner 2x4","2.4 Mid AT Z Edition 4x2","2.4 Entry AT Prerunner 2x4","2.4 Mid Prerunner 2x4","2.4 Mid AT Prerunner 2x4","2.4 Mid 4x4","2.4 High Prerunner 2x4","2.4 High AT Prerunner 2x4","2.4 Rocco AT Prerunner 2x4","2.8 High 4x4","2.8 High AT 4x4","2.8 Rocco AT 4x4" ],
+        "colorName": ["Attitude Black Mica","Dark Blue Mica","Dark Grey Metallic","Emotional Red II","Oxide Bronze Metallic","Silver Metallic","Super White II","White Pearl Crystal"],
+        "price": [ 689000.00,704000.00,754000.00,769000.00,794000.00,807000.00,809000.00,857000.00,872000.00,922000.00,957000.00,959000.00,1009000.00,1079000.00,1109000.00,1159000.00,1239000.00 ]
+
+    }
+}
+
+

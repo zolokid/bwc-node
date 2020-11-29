@@ -75,18 +75,23 @@ registerRouter.post('/', (req, res, next) => {
             finance_period: {
                 description: "Customer's chosen finance_period",
                 type: "integer",
-                minimum: 0,
-                maximum: 12
+                minimum: 0
             },
             finance_per_month: {
                 description: "Customer's chosen finance_per_month",
                 type: "number",
                 minimum: 0
             },
+            is_company: {
+                description: "This is customer a company",
+                type: "integer",
+                minimum: 0,
+                maximum: 1
+            }
         },
         required: ["name", "mobile_no", "zipcode", "model", "model_no", 
         "finance_model", "finance_submodel", "finance_price", "finance_down_percent", 
-        "finance_down_amount", "finance_period", "finance_per_month"]
+        "finance_down_amount", "finance_period", "finance_per_month", "is_company"]
     }
     var validate = ajv.compile(schema);
     var valid = validate(registerInfo);
@@ -159,12 +164,21 @@ registerRouter.post('/', (req, res, next) => {
                 }
             )
             // 4. Put to Line Notification API
-            var lineNotificationText = `Sale: ${salesResponsible.name} Email: ${salesResponsible.email}\n` +
-                `BranchCode: ${salesResponsible.branch_code} Branch: ${salesResponsible.branch_name}\n`+
-                `ติดต่อคุณ ${registerInfo.name} Phone: ${registerInfo.mobile_no} Zipcode: ${registerInfo.zipcode}\n` +
-                `สนใจรุ่น ${registerInfo.model_no} financeModel: ${registerInfo.finance_model} financeSubModel: ${registerInfo.finance_submodel}\n`+
-                `ราคา ${registerInfo.finance_price}฿ ดาวน์ ${registerInfo.finance_down_percent}% ${registerInfo.finance_down_amount}฿ `+ 
-                `ผ่อน ${registerInfo.finance_period}เดือน  ${registerInfo.finance_per_month}฿ ต่อเดือน`;
+            var lineNotificationText = `มีการลงทะเบียนใหม่\n\n` +
+                `เรียนคุณ ${salesResponsible.name}\n`+
+                `อีเมล์: ${salesResponsible.email}\n` +
+                `สาขาเลขที่: ${salesResponsible.branch_code}\n` +
+                `สาขา: ${salesResponsible.branch_name}\n`+
+                `\n` +
+                `ชื่อลูกค้า: ${registerInfo.name}\n` +
+                `เบอร์โทร: ${registerInfo.mobile_no}\n` +
+                `รหัสไปรษณีย์: ${registerInfo.zipcode}\n` +
+                `สนใจรุ่น ${registerInfo.model_no}\n` +
+                `financeModel: ${registerInfo.finance_model}\n` +
+                `financeSubModel: ${registerInfo.finance_submodel}\n`+
+                `ราคา ${registerInfo.finance_price}฿\n`+
+                `ดาวน์ ${registerInfo.finance_down_percent}% ${registerInfo.finance_down_amount}฿\n`+ 
+                `ผ่อน ${registerInfo.finance_period} เดือน  ${registerInfo.finance_per_month}฿ ต่อเดือน`;
 
             var lineNotificationAPI = axios.post(
                 `https://notify-api.line.me/api/notify?message=${encodeURIComponent(lineNotificationText)}`,
@@ -195,12 +209,13 @@ registerRouter.post('/', (req, res, next) => {
                 //     "status": 200,
                 //     "message": "ok"
                 // }
-                if (values[1].value.status === 200){
+                if (values[1].value && values[1].value.status === 200){
                     db.query(`INSERT INTO notification (name, recipient, status) 
                     VALUES ("${registerInfo.name}", "${salesResponsible.name}", "success")`, function (err, insertedNotificationResult){
                         if (err) throw(err);
                     });
                 }else{
+                    console.error("Line Error");
                     db.query(`INSERT INTO notification (name, recipient, status) 
                     VALUES ("${registerInfo.name}", "${salesResponsible.name}", "fail")`, function (err, insertedNotificationResult){
                         if (err) {
@@ -211,6 +226,7 @@ registerRouter.post('/', (req, res, next) => {
                 }
                 // If Barawindsor Error, Output on 
                 if (values[0].status == 'rejected') {
+                    console.error("Barawindsor Error");
                     res.status(500).json({success: false, error: values[0].reason});
                     throw(values[0].reason);
                 }

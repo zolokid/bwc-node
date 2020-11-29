@@ -1,0 +1,19 @@
+{
+    "model": ["Yaris 2020", "Yaris Ativ 2020"],
+    "priceStart": [549000.00, 539000.00],
+    "yaris": {
+        "modelNo": [ "Y/A-Entry", "Y/A-Sport", "Y/A-Sport Premium", "Y-Sport Premium (Black Roof)"],
+        "subModel": [ "Entry", "Sport", "Sport Premium", "Sport Premium (Black Roof)"],
+        "colorName": [ "Attitude Black Mica", "Citrus Mica Metallic / Black Roof", "Cyan Metallic / Black Roof", "Gray Metallic", "Platinum White Pearl", "Platinum White Pearl / Black Roof", "Red Mica Metallic / Black Roof", "Silver Metallic" ],
+        "price": [ 549000.00, 609000.00, 679000.00, 684000.00 ]
+
+    },
+    "yarisAtiv": {
+        "modelNo": [ "Y/A-Entry", "Y/A-Sport", "Y/A-Sport Premium"],
+        "subModel": [ "Entry", "Sport", "Sport Premium"],
+        "colorName": [ "Attitude Black Mica", "Dark Blue Mica Metallic", "Gray Metallic", "Red Mica Metallic", "Silver Metallic", "Platinu Super White" ],
+        "price": [ 539000.00, 599000.00, 674000.00 ]
+
+    }
+}
+

@@ -13,25 +13,25 @@
 }
 
 @font-face{
-    font-family: PromptLight;
+    font-family: KanitExtraLight;
     // src: url("./fonts/Sarabun-Regular.ttf")
     // src: url("./fonts-2/Prompt-Light.ttf")
     src: url("./fontsKanit/Kanit-ExtraLight.ttf")
 }
 
 @font-face{
-    font-family: PromptRegular;
+    font-family: KanitLight;
     // src: url("./fonts/Sarabun-SemiBold.ttf")
     // src: url("./fonts-2/Prompt-Regular.ttf")
     src: url("./fontsKanit/Kanit-Light.ttf")
 }
 
 body {
-    font-family: PromptLight;
+    font-family: KanitExtraLight;
 }
 
-b, h2 {
-    font-family: PromptRegular;
+b, h1, h2, h3, h4 {
+    font-family: KanitLight;
 }
 
 a {
@@ -40,6 +40,5 @@ a {
 
 .error {
     color: red;
-    font-size: 12px;
-    margin-left: 5px;
 }
+
