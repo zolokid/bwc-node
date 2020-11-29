@@ -17,9 +17,9 @@ function App() {
         <div className="App">
             <NavBarComponent /> 
             <Switch>
-                <Route path="/" exact component={HomeYarisComponent}/>
-                <Route path="/toyota-yaris" exact component={HomeYarisComponent} basename="/toyota-yaris" />
-                <Route path="/toyota-revo" exact component={HomeRevoComponent} basename="/toyota-revo" />
+                <Route path="/campaign" exact component={HomeYarisComponent}/>
+                <Route path="/campaign/toyota-yaris" exact component={HomeYarisComponent} basename="/campaign" />
+                <Route path="/campaign/toyota-revo" exact component={HomeRevoComponent} basename="/campaign" />
             </Switch>
 
         </div>

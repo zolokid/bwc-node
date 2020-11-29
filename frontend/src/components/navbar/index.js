@@ -49,11 +49,11 @@ const NavBarComponent = () => {
                             <div className={styles.boxCar}>
                                 <h3>แคมเปญ</h3>
                                 <div className={`${styles.containerRow}`}>
-                                    <a href="/toyota-yaris">
+                                    <a href="../campaign/toyota-yaris">
                                         <img className={styles.preview} src={yaris2020} alt="yaris2020" />
                                         <p>Yaris/Ativ</p>
                                     </a>
-                                    <a href="/toyota-revo">
+                                    <a href="../campaign/toyota-revo">
                                         <img className={styles.preview} src={yarisAtiv2020} alt="YarisAtiv2020" />
                                         <p>Revo</p>
                                     </a>
@@ -69,8 +69,8 @@ const NavBarComponent = () => {
                 <div className={styles.topnav} id={"myLinks"} >
                         <a href="http://www.toyotabara.com">หน้าหลัก</a>
                         <a href="http://www.toyotabara.com/home/promotionbara">โปรโมชั่น</a>
-                        <Link to="/toyota-yaris" onClick={hideBurger}>แคมเปญ Yaris/Ativ</Link>
-                        <Link to="/toyota-revo" onClick={hideBurger}>แคมเปญ Revo</Link>
+                        <Link to="../campaign/toyota-yaris" onClick={hideBurger}>แคมเปญ Yaris/Ativ</Link>
+                        <Link to="../campaign/toyota-revo" onClick={hideBurger}>แคมเปญ Revo</Link>
                         <a href="http://www.toyotabara.com/home/contact">ติดต่อเรา</a>
                 </div>
                 
