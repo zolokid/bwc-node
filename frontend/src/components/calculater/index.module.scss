@@ -95,13 +95,22 @@
 	padding: 10px;
 }
 
+.containerColWidth2 {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 10px;
+	margin-left: 30px;
+}
+
 .containerRowWidth100 > div {
 	width: 100px;
 }
 
 .widthFormInput {
 	width: 100%;
-	margin: 30px 0px 30px 30px;
+	margin: 0px 0px 30px 30px;
 }
 
 .widthFormInputCol2 {
@@ -389,6 +398,7 @@
 	//box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
 	cursor: pointer;
 	outline: none;
+	font-weight: bold;
 }
 
 .selectBoxCurrent:focus + .selectBoxList {
@@ -420,9 +430,9 @@
 	z-index: 2;
 	position: absolute;
 	left: 10px;
-	top: 0px;
-	width: 80px;
-	height: 50px;
+	top: 10px;
+	width: 60px;
+	height: auto;
 }
 
 .selectBoxInput {
@@ -437,7 +447,7 @@
 	display: none;
 	width: 100%;
 	height: 50px;
-	margin: 0 0 0 80px;
+	margin: 0 0 0 60px;
 	padding: 15px 15px;
 	font-size: 18px;
 }
@@ -667,7 +677,7 @@
 
 	.boxHighlightRed {
 		margin: 5px 0px 5px 0;
-		padding: 15px;
+		padding: 15px 20px;
 		display: relative;
 		right: 10px;
 		// width: 100p;
@@ -705,6 +715,11 @@
 	}
 }
 
+.textPrice {
+	padding: 0px 0px 20px;
+	margin: 0px;
+}
+
 @media only screen and (max-width: 1000px) {
 	.divPreviewCarMobile {
 		width: 100%;
@@ -721,18 +736,26 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
+
+	.containerColWidth2 {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-left: 0;
+	}
+
 	.widthFormInputCol2 {
 		width: 100%;
-		margin: 0 0 0 30px;
+		margin: 0 0 0 10px;
 	}
 	.widthFormInputColDownMonthPercent {
 		width: 100%;
-		margin: 0 0 0 30px;
+		margin: 0 0 0 0;
 	}
 	.boxHighlight {
 		width: 100%;
 		margin: 10px 20px;
-		font-size: 15px;
+		font-size: 20px;
 		text-align: center;
 	}
 	.containerRowNoWrap {
@@ -762,7 +785,17 @@
 		margin: 0 2px;
 	}
 
+	.containerRowDiv {
+		padding: 10px;
+		margin-right: 0;
+	}
+
 	.containerRowDiv2 {
 		border-left: none;
+		margin-left: 0;
+	}
+	.textPrice {
+		padding: 0px 0px 0px 10px;
+		margin: 0px;
 	}
 }

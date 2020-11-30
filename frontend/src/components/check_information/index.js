@@ -12,7 +12,7 @@ function currencyFormat(num) {
     return (num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,'))
 }
 
-const CalculaterComponent = (props) => {
+const CheckInformationComponent = (props) => {
     const [series, setSeries] = useState(props.dataContent.model[0]);
     const [ model, setModel ] = useState(props.dataContent.yaris.subModel[0]);
     const [ modelCar, setModelCar ] = useState(props.dataContent.yaris.subModel);
@@ -20,7 +20,7 @@ const CalculaterComponent = (props) => {
 
     useEffect(() => {
         var pathname = window.location.pathname;
-        if (pathname === "/toyota-revo") {
+        if (pathname === "/campaign/toyota-revo") {
             if(series === "Revo Double Cab 2020") {
                 // Revo Double Cab 
                 setModelCar(props.dataContent.doubleCab.subModel);
@@ -61,7 +61,7 @@ const CalculaterComponent = (props) => {
                     {
                         props.dataContent.model.map((_modelCar, index) => {
                             return (
-                                <div className={`${styles.btnShippingOptionModel} ${series===props.dataContent.model[index] && styles.active }`} onClick={() => setSeries(props.dataContent.model[index])}>
+                                <div className={`${styles.btnShippingOptionModel} ${series===props.dataContent.model[index] && styles.active }`} onClick={() => setSeries(props.dataContent.model[index])} key={"subModelCar-"+index}>
                                     <div className={styles.containerRowNoWrap}>
                                         {(() => {
                                             switch (props.dataContent.model[index]) {
@@ -89,15 +89,15 @@ const CalculaterComponent = (props) => {
                     {/* <img src={yaris2020} alt="." className={styles.previewCarModel} /> */}
                     {modelCar.map((_modelCar, index) => {
                         return (
-                            <div className={styles.containerGrid}>
-                            <div key={index} className={`${styles.btnShippingOptionSubModel} ${model===_modelCar ? styles.active:styles.deactive }`} onClick={() => setModel(_modelCar)}>
-                                
+                            <div className={styles.containerGrid} key={"modelCar-"+index}>
+                                <div key={index} className={`${styles.btnShippingOptionSubModel} ${model===_modelCar ? styles.active:styles.deactive }`} onClick={() => setModel(_modelCar)}>
+
                                     <div className={styles.containerRow}>
                                         <div className={`${styles.containerColNoWrap} ${styles.modelCar}`} style={{padding:"0px 10px"}}>
                                             <h1 style={{fontSize:"28px", margin:"0px"}}>{_modelCar}</h1>
                                             <div className={styles.containerRow}>
                                                 <p style={{fontSize: "16px"}}>{currencyFormat(price[index])} บาท / </p>
-                                                <qd style={{fontSize: "16px"}}>&nbsp;เริ่มต้น 10,106 ต่อเดือน</qd>
+                                                <small style={{fontSize: "16px"}}>&nbsp;เริ่มต้น 10,106 ต่อเดือน</small>
                                             </div>
                                             <a href="#Calculate" type="button" className={styles.buttonForCal}>คำนวณเงินผ่อน</a>
                                         </div>
@@ -113,4 +113,4 @@ const CalculaterComponent = (props) => {
     )
 };
 
-export default CalculaterComponent;
+export default CheckInformationComponent;

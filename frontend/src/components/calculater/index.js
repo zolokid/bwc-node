@@ -27,7 +27,7 @@ const CalculaterComponent = (props) => {
         var pathname = window.location.pathname;
         var dataToyota = {};
         
-        if (pathname === "/toyota-revo") {
+        if (pathname === "/campaign/toyota-revo") {
             dataToyota = dataToyotaRevo;
             if (values.series === dataToyota.model[0]) {
                 setFieldValue("model", dataToyota.yaris.subModel[0]);
@@ -53,7 +53,7 @@ const CalculaterComponent = (props) => {
                 setFieldValue("color", dataToyota.yarisAtiv.colorName[0]);
             }
         }
-        
+        // console.log("dataToyota.model[0]", dataToyota.model[0]);
     }, [values.series])
 
     // Compute Price
@@ -61,7 +61,7 @@ const CalculaterComponent = (props) => {
         const setPriceCar = () => {
             var pathname = window.location.pathname;
             var dataToyota = {};
-            if (pathname === "/toyota-revo") {
+            if (pathname === "/campaign/toyota-revo") {
                 dataToyota = dataToyotaRevo;
                 if (values.series === dataToyota.model[0] && values.model !== "0" && values.color !== "0") {
                     setMasterData(props.dataContent.yaris);
@@ -334,7 +334,7 @@ const CalculaterComponent = (props) => {
                     setFieldValue("price", "- บาท", false);
                 }
             }
-            console.log(values.series);
+            // console.log(values.series);
         }
 
         const setInstallments = (_price) => {
@@ -454,12 +454,12 @@ const CalculaterComponent = (props) => {
 
                     {/* Col #2 */}
                     <div className={styles.containerRowDiv2} style={{flexGrow: 1}}>
-                        <div className={styles.containerColWidth}>
+                        <div className={styles.containerColWidth2}>
                             <div className={`${styles.widthFormInputCol2} ${styles.textPrice}` }>
                                 <h1 htmlFor="stickerConfiguration" className={styles.key}>ราคา</h1>
                                 <label htmlFor="stickerConfiguration" className={styles.value} style={{padding: "0 0 0 20px"}}>{currencyFormat(values.price)}</label>
                             </div>
-                            <div className={`${styles.widthFormInputCol2} ${styles.textPrice}`} style={{padding: "0"}}>
+                            <div className={`${styles.widthFormInputCol2} ${styles.textPrice}`}>
                                 <h1 htmlFor="stickerConfiguration" className={styles.key}>ดาวน์</h1>
                                 <label htmlFor="stickerConfiguration" className={styles.value} style={{padding: "0 0 0 20px"}}>{currencyFormat(values.installments)}</label>
                             </div>
@@ -478,7 +478,7 @@ const CalculaterComponent = (props) => {
                             </div>
                             <div className={`${styles.widthFormInputColDownMonthPercent}`}>
                                 <div className={styles.containerRowNoWrap} >
-                                    <div className={`${styles.widthFormInputColDownMonthTitel} ${styles.textPrice}`} style={{padding: "0 0 20px 0", margin: "0px"}}>
+                                    <div className={`${styles.widthFormInputColDownMonthTitel} ${styles.textPrice}`}>
                                         <h1 htmlFor="stickerConfiguration" className={styles.key} style={{padding:"15px 10px 0 0", width:"120px"}}>จำนวนเดือน</h1>
                                     </div>
                                     <div className={styles.dropdownSelect}>
@@ -492,7 +492,7 @@ const CalculaterComponent = (props) => {
                                     </div>
                                 </div>
                                 <div className={styles.containerRowNoWrap}>
-                                    <div className={`${styles.widthFormInputColDownMonth} ${styles.textPrice}`} style={{padding: "0 0 20px 0", margin: "0px"}}>
+                                    <div className={`${styles.widthFormInputColDownMonth} ${styles.textPrice}`}>
                                         <h1 htmlFor="stickerConfiguration" className={styles.keyTotal} style={{padding:"15px 10px 0 0", width:"140px"}}>ราคาผ่อนเพียง</h1>
                                     </div>
                                     <div className={styles.boxHighlight}>
@@ -522,12 +522,12 @@ const CalculaterComponent = (props) => {
                             </div>
                             <div className={styles.groupContact}>
                                 <div className={`${styles.containerRowRight}`}>
-                                    <div className={styles.boxHighlightRed} style={{padding: "10px"}}>โทร 02-095-3222</div>
+                                    <div className={styles.boxHighlightRed}>โทร 02-095-3222</div>
                                 </div>
                                 <div className={`${styles.containerRowRight}`}>
                                     <a href={"#Register"} className={styles.boxHighlightRed}>ลงทะเบียน</a>
                                     <div className={styles.boxHighlightKeyOr}>หรือ</div>
-                                    <div className={styles.boxHighlightGreen}><a href={"https://line.me/R/ti/p/%40125irrov"}>ติดต่อผ่าน Line@</a></div>
+                                    <div className={styles.boxHighlightGreen}><a href={"https://line.me/R/ti/p/%40125irrov"}>ติดต่อผ่าน Line</a></div>
                                 </div>
                             </div>
                         </div>
@@ -544,13 +544,13 @@ const CalculaterComponent = (props) => {
 
                     {/* Col #3 Contact */}
                     <div className={`${styles.containerRowContact} ${styles.divPreviewCarMobile}`}>
-                        <div className={styles.boxHighlightRed} style={{padding: "10px"}}>
+                        <div className={styles.boxHighlightRed}>
                             โทร 02-095-3222
                         </div>
                         <div className={`${styles.containerRowRight}`}>
                             <a href={"#Register"} className={styles.boxHighlightRed}>ลงทะเบียน</a>
                             <div className={styles.boxHighlightKeyOr}>หรือ</div>
-                            <div className={styles.boxHighlightGreen}>Add line@</div>
+                            <div className={styles.boxHighlightGreen}><a href={"https://line.me/R/ti/p/%40125irrov"}>ติดต่อผ่าน Line</a></div>
                         </div>
                     </div>
                 </Form>
@@ -673,7 +673,7 @@ const SelectBoxNoImg = ({ values, name, options }) => {
 
 var pathname = window.location.pathname;
 var dataToyota = {};
-if (pathname === "/toyota-revo") {
+if (pathname === "/campaign/toyota-revo") {
     dataToyota = dataToyotaRevo;
 }
 else {

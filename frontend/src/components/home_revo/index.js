@@ -7,7 +7,7 @@ import CalculaterComponent from "../calculater";
 import CheckInformationComponent from "../check_information";
 import PerformanceComponent from "../preformance";
 import FooterComponant from "../footer";
-import ReactGA from 'react-ga';
+// import ReactGA from 'react-ga';
 import Helmet from 'react-helmet';
 import styles from './index.module.scss';
 
@@ -40,12 +40,26 @@ window.data_customer = {
 };
 
 const HomeRevoComponent = () => {
-    var defaultTitle = 'Toyota Hilux Revo - ซื้อ Revo ทุกรุ่นวันนี้ ออกรถง่ายเพียง 800 บาท | Barawindsor';
+    var defaultTitle = 'ซื้อ Toyota Hilux Revo ทุกรุ่นวันนี้ ออกรถง่ายเพียง 800 บาท ที่ Barawindsor';
     return (
         <>
-        <Helmet>
-            <title>{defaultTitle}</title>
-        </Helmet>
+            <Helmet>
+                <title>{defaultTitle}</title>
+                <meta name="title" content="ซื้อ Toyota Hilux Revo ทุกรุ่นวันนี้ ออกรถง่ายเพียง 800 บาท ที่ Barawindsor"/>
+                <meta name="description" content="ออกรถง่ายเพียง 800 บาท เพียงซื้อ TOYOTA YARIS/ATIV ทุกรุ่นวันนี้ ที่ Toyota Barawindsor ทุกสาขา"/>
+
+                <meta property="og:type" content="website"/>
+                <meta property="og:url" content=""/>
+                <meta property="og:title" content="ซื้อ Toyota Hilux Revo ทุกรุ่นวันนี้ ออกรถง่ายเพียง 800 บาท ที่ Barawindsor"/>
+                <meta property="og:description" content="ออกรถง่ายเพียง 800 บาท เพียงซื้อ TOYOTA YARIS/ATIV ทุกรุ่นวันนี้ ที่ Toyota Barawindsor ทุกสาขา"/>
+                <meta property="og:image" content="https://www.toyotabara.com/campaign/static/media/promotion_revo.728cd39a.gif"/>
+
+                <meta property="twitter:card" content="summary_large_image"/>
+                <meta property="twitter:url" content=""/>
+                <meta property="twitter:title" content="ซื้อ Toyota Hilux Revo ทุกรุ่นวันนี้ ออกรถง่ายเพียง 800 บาท ที่ Barawindsor"/>
+                <meta property="twitter:description" content="ออกรถง่ายเพียง 800 บาท เพียงซื้อ TOYOTA YARIS/ATIV ทุกรุ่นวันนี้ ที่ Toyota Barawindsor ทุกสาขา"/>
+                <meta property="twitter:image" content="https://www.toyotabara.com/campaign/static/media/promotion_revo.728cd39a.gif"></meta>
+            </Helmet>
             <main>
                 {/* Banner */}
                 <img src={remoPomote} alt="." className={styles.banner} />
@@ -86,12 +100,5 @@ const HomeRevoComponent = () => {
         </>
     )
 };
-{/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-PBBL9S80RC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-PBBL9S80RC');
-</script> */}
 export default HomeRevoComponent;

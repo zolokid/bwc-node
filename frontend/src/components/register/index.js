@@ -21,7 +21,7 @@ const RegisterComponent = (props) => {
     const [typeCar, setTypeCar] = useState("yaris");
     useEffect(() => {
         var pathname = window.location.pathname;
-        if (pathname === "/toyota-revo") { setTypeCar("revo"); }
+        if (pathname === "/campaign/toyota-revo") { setTypeCar("revo"); }
         else { setTypeCar("yaris"); }
     }, [])
 
@@ -188,7 +188,7 @@ const postRegister = (values) => {
 
 var pathname = window.location.pathname;
 var dataToyota = {};
-if (pathname === "/toyota-revo") {
+if (pathname === "/campaign/toyota-revo") {
     dataToyota = dataToyotaRevo;
 }
 else {
@@ -223,7 +223,7 @@ export const EnhancedRegisterComponent = withFormik({
         }
         
         // console.log("data_customer Validate", window.data_customer);
-        console.log("values.is_company Validate", values.is_company);
+        // console.log("values.is_company Validate", values.is_company);
         return errors;
     },
     handleSubmit: (values, { props }) => {

@@ -18,8 +18,8 @@ function App() {
             <NavBarComponent /> 
             <Switch>
                 <Route path="/campaign" exact component={HomeYarisComponent}/>
-                <Route path="/campaign/toyota-yaris" exact component={HomeYarisComponent} basename="/campaign" />
-                <Route path="/campaign/toyota-revo" exact component={HomeRevoComponent} basename="/campaign" />
+                <Route path="/campaign/toyota-yaris" exact component={HomeYarisComponent} basename="/campaign"/>
+                <Route path="/campaign/toyota-revo" exact component={HomeRevoComponent} basename="/campaign"/>
             </Switch>
 
         </div>

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 import yaris2020 from '../register/yaris-2020.png';
 import yarisAtiv2020 from '../register/ativ-2020.png';
-import revo2020 from '../register/revo-2020.png';
+// import revo2020 from '../register/revo-2020.png';
 
 import useWindowSize from '../../hooks/useWindowSize';
 
@@ -40,8 +40,8 @@ const NavBarComponent = () => {
         <header>
             <nav className={styles.navBar}>
                 <Logo/>
-                <ul class={styles.ulNav}>
-                    <li><a class="active" href="http://www.toyotabara.com">หน้าหลัก</a></li>
+                <ul className={styles.ulNav}>
+                    <li><a href="http://www.toyotabara.com">หน้าหลัก</a></li>
                     <li><a href="http://www.toyotabara.com/home/promotionbara">โปรโมชั่น</a></li>
                     <li className={styles.dropdown}>
                         <button className={styles.dropbtn}>แคมเปญ</button>
