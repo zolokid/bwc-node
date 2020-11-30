@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/campaign/static/css/main.6e7e5a82.chunk.css",
-    "main.js": "/campaign/static/js/main.a48643a3.chunk.js",
-    "main.js.map": "/campaign/static/js/main.a48643a3.chunk.js.map",
-    "runtime-main.js": "/campaign/static/js/runtime-main.4abf849e.js",
-    "runtime-main.js.map": "/campaign/static/js/runtime-main.4abf849e.js.map",
-    "static/js/2.46cb4cc1.chunk.js": "/campaign/static/js/2.46cb4cc1.chunk.js",
-    "static/js/2.46cb4cc1.chunk.js.map": "/campaign/static/js/2.46cb4cc1.chunk.js.map",
-    "static/js/3.f11e243f.chunk.js": "/campaign/static/js/3.f11e243f.chunk.js",
-    "static/js/3.f11e243f.chunk.js.map": "/campaign/static/js/3.f11e243f.chunk.js.map",
+    "main.css": "/campaign/static/css/main.fdbb3e77.chunk.css",
+    "main.js": "/campaign/static/js/main.8add5df2.chunk.js",
+    "main.js.map": "/campaign/static/js/main.8add5df2.chunk.js.map",
+    "runtime-main.js": "/campaign/static/js/runtime-main.44760a0f.js",
+    "runtime-main.js.map": "/campaign/static/js/runtime-main.44760a0f.js.map",
+    "static/js/2.2aa4c6c6.chunk.js": "/campaign/static/js/2.2aa4c6c6.chunk.js",
+    "static/js/2.2aa4c6c6.chunk.js.map": "/campaign/static/js/2.2aa4c6c6.chunk.js.map",
+    "static/js/3.64e6b287.chunk.js": "/campaign/static/js/3.64e6b287.chunk.js",
+    "static/js/3.64e6b287.chunk.js.map": "/campaign/static/js/3.64e6b287.chunk.js.map",
     "index.html": "/campaign/index.html",
-    "static/css/main.6e7e5a82.chunk.css.map": "/campaign/static/css/main.6e7e5a82.chunk.css.map",
-    "static/js/2.46cb4cc1.chunk.js.LICENSE.txt": "/campaign/static/js/2.46cb4cc1.chunk.js.LICENSE.txt",
+    "static/css/main.fdbb3e77.chunk.css.map": "/campaign/static/css/main.fdbb3e77.chunk.css.map",
+    "static/js/2.2aa4c6c6.chunk.js.LICENSE.txt": "/campaign/static/js/2.2aa4c6c6.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/campaign/static/media/Kanit-Light.68ccb9c4.ttf",
     "static/media/ativ-2020.6367e012.png": "/campaign/static/media/ativ-2020.6367e012.png",
     "static/media/icon-arrow.a2fedb2c.svg": "/campaign/static/media/icon-arrow.a2fedb2c.svg",
@@ -25,9 +25,9 @@
     "static/media/yaris-2020.fc12f377.png": "/campaign/static/media/yaris-2020.fc12f377.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.4abf849e.js",
-    "static/js/2.46cb4cc1.chunk.js",
-    "static/css/main.6e7e5a82.chunk.css",
-    "static/js/main.a48643a3.chunk.js"
+    "static/js/runtime-main.44760a0f.js",
+    "static/js/2.2aa4c6c6.chunk.js",
+    "static/css/main.fdbb3e77.chunk.css",
+    "static/js/main.8add5df2.chunk.js"
   ]
 }

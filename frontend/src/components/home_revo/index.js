@@ -46,18 +46,18 @@ const HomeRevoComponent = () => {
             <Helmet>
                 <title>{defaultTitle}</title>
                 <meta name="title" content="ซื้อ Toyota Hilux Revo ทุกรุ่นวันนี้ ออกรถง่ายเพียง 800 บาท ที่ Barawindsor"/>
-                <meta name="description" content="ออกรถง่ายเพียง 800 บาท เพียงซื้อ TOYOTA YARIS/ATIV ทุกรุ่นวันนี้ ที่ Toyota Barawindsor ทุกสาขา"/>
+                <meta name="description" content="ออกรถง่ายเพียง 800 บาท เพียงซื้อ Toyota Hilux Revo ทุกรุ่นวันนี้ ที่ Toyota Barawindsor ทุกสาขา"/>
 
                 <meta property="og:type" content="website"/>
                 <meta property="og:url" content=""/>
                 <meta property="og:title" content="ซื้อ Toyota Hilux Revo ทุกรุ่นวันนี้ ออกรถง่ายเพียง 800 บาท ที่ Barawindsor"/>
-                <meta property="og:description" content="ออกรถง่ายเพียง 800 บาท เพียงซื้อ TOYOTA YARIS/ATIV ทุกรุ่นวันนี้ ที่ Toyota Barawindsor ทุกสาขา"/>
+                <meta property="og:description" content="ออกรถง่ายเพียง 800 บาท เพียงซื้อ Toyota Hilux Revo ทุกรุ่นวันนี้ ที่ Toyota Barawindsor ทุกสาขา"/>
                 <meta property="og:image" content="https://www.toyotabara.com/campaign/static/media/promotion_revo.728cd39a.gif"/>
 
                 <meta property="twitter:card" content="summary_large_image"/>
                 <meta property="twitter:url" content=""/>
                 <meta property="twitter:title" content="ซื้อ Toyota Hilux Revo ทุกรุ่นวันนี้ ออกรถง่ายเพียง 800 บาท ที่ Barawindsor"/>
-                <meta property="twitter:description" content="ออกรถง่ายเพียง 800 บาท เพียงซื้อ TOYOTA YARIS/ATIV ทุกรุ่นวันนี้ ที่ Toyota Barawindsor ทุกสาขา"/>
+                <meta property="twitter:description" content="ออกรถง่ายเพียง 800 บาท เพียงซื้อ Toyota Hilux Revo ทุกรุ่นวันนี้ ที่ Toyota Barawindsor ทุกสาขา"/>
                 <meta property="twitter:image" content="https://www.toyotabara.com/campaign/static/media/promotion_revo.728cd39a.gif"></meta>
             </Helmet>
             <main>
