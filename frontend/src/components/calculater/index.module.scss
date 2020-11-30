@@ -38,7 +38,7 @@
 }
 
 .containerRowDiv {
-	width: 20%;
+	width: 25%;
 	margin-right: 30px;
 }
 
@@ -120,12 +120,12 @@
 
 .widthFormInputColDownMonth {
 	width: 80px;
-	margin: 0 0 0 90px;
+	margin: 0 0 0 50px;
 }
 
 .widthFormInputColDownMonthPercent {
 	width: 400px;
-	margin: 0 0 0 30px;
+	margin: 0 0 0 0;
 }
 
 .formControl {
@@ -149,6 +149,11 @@
 		border-collapse: collapse;
 		border: 1px solid #f0f0f0;
 	}
+}
+
+.stickerConfiguration2 {
+	padding: 15px 10px 0 0;
+	width: 140px;
 }
 
 .buttonCalInstallment {
@@ -551,7 +556,7 @@
 	background-image: linear-gradient(225deg, #ff0000, #a70000);
 	// min-width: 100px;
 	height: 40px;
-	margin: 20px 50px;
+	margin: 12px 50px;
 	font-size: 20px;
 	font-weight: 900;
 }

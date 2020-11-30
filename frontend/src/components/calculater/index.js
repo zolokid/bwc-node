@@ -14,8 +14,9 @@ import dataToyotaRevo from '../home_revo/revo.json';
 import { ReactComponent as IconArrow } from './icon-arrow.svg';
 
 function currencyFormat(num) {
-    num = parseFloat(num);
-    return (num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,'))
+    num = Math.ceil(parseFloat(num));
+    num = (num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,'))
+    return num = num.substring(0, num.length - 3);
 }
 
 const CalculaterComponent = (props) => {
@@ -493,7 +494,7 @@ const CalculaterComponent = (props) => {
                                 </div>
                                 <div className={styles.containerRowNoWrap}>
                                     <div className={`${styles.widthFormInputColDownMonth} ${styles.textPrice}`}>
-                                        <h1 htmlFor="stickerConfiguration" className={styles.keyTotal} style={{padding:"15px 10px 0 0", width:"140px"}}>ราคาผ่อนเพียง</h1>
+                                        <h1 htmlFor="stickerConfiguration" className={styles.keyTotal} style={{width:"140px"}}>ราคาผ่อนเพียง</h1>
                                     </div>
                                     <div className={styles.boxHighlight}>
                                         <h4>{isNaN(parseFloat(values.installments_per_month).toFixed(2)) ? "-":currencyFormat(values.installments_per_month)} บาท/เดือน</h4>

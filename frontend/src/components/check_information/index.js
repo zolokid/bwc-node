@@ -8,8 +8,9 @@ import revoSmart2020 from './revoSmart-2020.png';
 import revoDouble2020 from './revoDouble-2020.png';
 
 function currencyFormat(num) {
-    num = Math.floor(parseFloat(num));
-    return (num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,'))
+    num = Math.ceil(parseFloat(num));
+    num = (num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,'))
+    return num = num.substring(0, num.length - 3);
 }
 
 const CheckInformationComponent = (props) => {
@@ -94,7 +95,7 @@ const CheckInformationComponent = (props) => {
 
                                     <div className={styles.containerRow}>
                                         <div className={`${styles.containerColNoWrap} ${styles.modelCar}`} style={{padding:"0px 10px"}}>
-                                            <h1 style={{fontSize:"28px", margin:"0px"}}>{_modelCar}</h1>
+                                            <h3 style={{fontSize:"18px", marginTop: "10px"}}>{_modelCar}</h3>
                                             <div className={styles.containerRow}>
                                                 <p style={{fontSize: "16px"}}>{currencyFormat(price[index])} บาท / </p>
                                                 <small style={{fontSize: "16px"}}>&nbsp;เริ่มต้น 10,106 ต่อเดือน</small>
