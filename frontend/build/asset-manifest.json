@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/campaign/static/css/main.fdbb3e77.chunk.css",
-    "main.js": "/campaign/static/js/main.8add5df2.chunk.js",
-    "main.js.map": "/campaign/static/js/main.8add5df2.chunk.js.map",
+    "main.css": "/campaign/static/css/main.c4a03793.chunk.css",
+    "main.js": "/campaign/static/js/main.1b6544f0.chunk.js",
+    "main.js.map": "/campaign/static/js/main.1b6544f0.chunk.js.map",
     "runtime-main.js": "/campaign/static/js/runtime-main.44760a0f.js",
     "runtime-main.js.map": "/campaign/static/js/runtime-main.44760a0f.js.map",
     "static/js/2.2aa4c6c6.chunk.js": "/campaign/static/js/2.2aa4c6c6.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.64e6b287.chunk.js": "/campaign/static/js/3.64e6b287.chunk.js",
     "static/js/3.64e6b287.chunk.js.map": "/campaign/static/js/3.64e6b287.chunk.js.map",
     "index.html": "/campaign/index.html",
-    "static/css/main.fdbb3e77.chunk.css.map": "/campaign/static/css/main.fdbb3e77.chunk.css.map",
+    "static/css/main.c4a03793.chunk.css.map": "/campaign/static/css/main.c4a03793.chunk.css.map",
     "static/js/2.2aa4c6c6.chunk.js.LICENSE.txt": "/campaign/static/js/2.2aa4c6c6.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/campaign/static/media/Kanit-Light.68ccb9c4.ttf",
     "static/media/ativ-2020.6367e012.png": "/campaign/static/media/ativ-2020.6367e012.png",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.44760a0f.js",
     "static/js/2.2aa4c6c6.chunk.js",
-    "static/css/main.fdbb3e77.chunk.css",
-    "static/js/main.8add5df2.chunk.js"
+    "static/css/main.c4a03793.chunk.css",
+    "static/js/main.1b6544f0.chunk.js"
   ]
 }
