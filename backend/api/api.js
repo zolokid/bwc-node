@@ -3,7 +3,7 @@ const express   = require('express');
 const apiRouter = express.Router(mergeParams=true);
 
 // All the child routers defined
-const registerRouter             = require('./register.js');
+const registerRouter = require('./register.js');
 
 
 apiRouter.get('/', (req, res) => {
@@ -12,7 +12,6 @@ apiRouter.get('/', (req, res) => {
     });
   });
 
-apiRouter.use('/register',               registerRouter);
-
+apiRouter.use('/register', registerRouter);
 
 module.exports = apiRouter;
