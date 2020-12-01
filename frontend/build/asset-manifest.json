@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/campaign/static/css/main.c4a03793.chunk.css",
-    "main.js": "/campaign/static/js/main.1b6544f0.chunk.js",
-    "main.js.map": "/campaign/static/js/main.1b6544f0.chunk.js.map",
+    "main.js": "/campaign/static/js/main.65bd1a2b.chunk.js",
+    "main.js.map": "/campaign/static/js/main.65bd1a2b.chunk.js.map",
     "runtime-main.js": "/campaign/static/js/runtime-main.44760a0f.js",
     "runtime-main.js.map": "/campaign/static/js/runtime-main.44760a0f.js.map",
     "static/js/2.2aa4c6c6.chunk.js": "/campaign/static/js/2.2aa4c6c6.chunk.js",
@@ -28,6 +28,6 @@
     "static/js/runtime-main.44760a0f.js",
     "static/js/2.2aa4c6c6.chunk.js",
     "static/css/main.c4a03793.chunk.css",
-    "static/js/main.1b6544f0.chunk.js"
+    "static/js/main.65bd1a2b.chunk.js"
   ]
 }
