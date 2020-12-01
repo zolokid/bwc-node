@@ -75,11 +75,9 @@ const RegisterComponent = (props) => {
                 {typeCar === "revo" &&
                     <>
                         <div className={styles.containerRow}>
-                            <div className={` ${styles.carSelect}`}>
-                                <p>ลูกค้าองค์กร</p>
-                            </div>
                             <div style={{padding: "2px 10px"}} >
                                 <Field name="is_company" type="checkbox" value="1" />
+                                <p style={{display: "inline-block", marginLeft: "6px"}}>ลูกค้าองค์กร</p>
                             </div>
                         </div>
                     </>
