@@ -13,7 +13,8 @@ import styles from './index.module.scss';
 
 // Data of Toyota Yaris
 import RevoData from './revo.json';
-import remoPomote from './promotion_revo.gif';
+import revoPromote from './promotion_revo.gif';
+import revoPromoteMobile from './promotion_revo_mobile.gif';
 // import yarisPomote from './pomotion_yaris.gif';
 
 //const ga = 'G-PBBL9S80RC';
@@ -52,17 +53,18 @@ const HomeRevoComponent = () => {
                 <meta property="og:url" content=""/>
                 <meta property="og:title" content="ซื้อ Toyota Hilux Revo ทุกรุ่นวันนี้ ออกรถง่ายเพียง 800 บาท ที่ Barawindsor"/>
                 <meta property="og:description" content="ออกรถง่ายเพียง 800 บาท เพียงซื้อ Toyota Hilux Revo ทุกรุ่นวันนี้ ที่ Toyota Barawindsor ทุกสาขา"/>
-                <meta property="og:image" content="https://www.toyotabara.com/campaign/static/media/promotion_revo.728cd39a.gif"/>
+                <meta property="og:image" content="https://www.toyotabara.com/home/wp-content/uploads/2020/12/promotion_revo_social.gif"/>
 
                 <meta property="twitter:card" content="summary_large_image"/>
                 <meta property="twitter:url" content=""/>
                 <meta property="twitter:title" content="ซื้อ Toyota Hilux Revo ทุกรุ่นวันนี้ ออกรถง่ายเพียง 800 บาท ที่ Barawindsor"/>
                 <meta property="twitter:description" content="ออกรถง่ายเพียง 800 บาท เพียงซื้อ Toyota Hilux Revo ทุกรุ่นวันนี้ ที่ Toyota Barawindsor ทุกสาขา"/>
-                <meta property="twitter:image" content="https://www.toyotabara.com/campaign/static/media/promotion_revo.728cd39a.gif"></meta>
+                <meta property="twitter:image" content="https://www.toyotabara.com/home/wp-content/uploads/2020/12/promotion_revo_social.gif"></meta>
             </Helmet>
             <main>
                 {/* Banner */}
-                <img src={remoPomote} alt="." className={styles.banner} />
+                <img src={revoPromote} alt="." className={styles.banner} />
+                <img src={revoPromoteMobile} alt="." className={styles.bannerMobile} />
 
                 {/* RegisterComponent */}
                 <div className={styles.goldText} id="Register">

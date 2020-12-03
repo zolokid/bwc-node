@@ -11,6 +11,11 @@
 	width: 100px;
 }
 
+.logo {
+	width: auto;
+	height: 40px;
+}
+
 .navBar {
 	position: relative;
 	height: 80px;
@@ -192,5 +197,10 @@ li a:hover {
 
 	.topnav {
 		display: none;
+	}
+
+	.logo {
+		width: auto;
+		height: 30px;
 	}
 }

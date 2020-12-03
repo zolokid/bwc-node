@@ -5,6 +5,10 @@
 	height: auto;
 }
 
+.bannerMobile {
+	display: none;
+}
+
 .registerSection {
 	display: none;
 }
@@ -111,5 +115,15 @@
 
 	.goldText {
 		display: none;
+	}
+
+	.banner {
+		display: none;
+	}
+
+	.bannerMobile {
+		width: 100%;
+		height: auto;
+		display: block;
 	}
 }

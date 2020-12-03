@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from "react";
 import { withRouter } from 'react-router';
 import styles from './index.module.scss';
-import { ReactComponent as Logo } from './logo.svg';
+//import { ReactComponent as Logo } from './logo.svg';
 
 import { Link } from "react-router-dom";
 
+import myLogo from './logo.png';
 import yaris2020 from '../register/yaris-2020.png';
 import yarisAtiv2020 from '../register/ativ-2020.png';
 // import revo2020 from '../register/revo-2020.png';
@@ -39,10 +40,10 @@ const NavBarComponent = () => {
     return (
         <header>
             <nav className={styles.navBar}>
-                <Logo/>
+                <img className={styles.logo} src={myLogo} alt="toyota-barawindsor-logo" />
                 <ul className={styles.ulNav}>
-                    <li><a href="http://www.toyotabara.com">หน้าหลัก</a></li>
-                    <li><a href="http://www.toyotabara.com/home/promotionbara">โปรโมชั่น</a></li>
+                    <li><a href="https://www.toyotabara.com">หน้าหลัก</a></li>
+                    <li><a href="https://www.toyotabara.com/home/promotionbara">โปรโมชั่น</a></li>
                     <li className={styles.dropdown}>
                         <button className={styles.dropbtn}>แคมเปญ</button>
                         <div className={styles.dropdownContent}>
@@ -62,16 +63,16 @@ const NavBarComponent = () => {
                             </div>
                         </div>
                     </li>
-                    <li><a href="http://www.toyotabara.com/home/contact">ติดต่อเรา</a></li>
+                    <li><a href="https://www.toyotabara.com/home/contactus/">ติดต่อเรา</a></li>
                 </ul>
 
                 {/* <!-- Top Navigation Menu --> */}
                 <div className={styles.topnav} id={"myLinks"} >
-                        <a href="http://www.toyotabara.com">หน้าหลัก</a>
-                        <a href="http://www.toyotabara.com/home/promotionbara">โปรโมชั่น</a>
+                        <a href="https://www.toyotabara.com">หน้าหลัก</a>
+                        <a href="https://www.toyotabara.com/home/promotionbara">โปรโมชั่น</a>
                         <Link to="../campaign/toyota-yaris" onClick={hideBurger}>แคมเปญ Yaris/Ativ</Link>
                         <Link to="../campaign/toyota-revo" onClick={hideBurger}>แคมเปญ Revo</Link>
-                        <a href="http://www.toyotabara.com/home/contact">ติดต่อเรา</a>
+                        <a href="https://www.toyotabara.com/home/contactus/">ติดต่อเรา</a>
                 </div>
                 
                 <div className={`${styles.burger} ${isBurgerToggled ? styles.toggle : ""}`} onClick={clickBurger}>

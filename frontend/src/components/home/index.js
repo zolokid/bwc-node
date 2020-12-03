@@ -15,7 +15,8 @@ import styles from './index.module.scss';
 import YarisData from './yaris.json';
 
 // import remoPomote from './pomotion_revo.gif';
-import yarisPomote from './promotion_yaris.gif';
+import yarisPromote from './promotion_yaris.gif';
+import yarisPromoteMobile from './promotion_yaris_mobile.gif';
 
 //const ga = 'G-PBBL9S80RC';
 //ReactGA.initialize(ga);
@@ -53,17 +54,18 @@ const HomeComponent = () => {
             <meta property="og:url" content=""/>
             <meta property="og:title" content="ซื้อ Toyota Yaris/Ativ ทุกรุ่นวันนี้ ออกรถง่ายเพียง 800 บาท ที่ Barawindsor"/>
             <meta property="og:description" content="ออกรถง่ายเพียง 800 บาท เพียงซื้อ TOYOTA YARIS/ATIV ทุกรุ่นวันนี้ ที่ Toyota Barawindsor ทุกสาขา"/>
-            <meta property="og:image" content="https://www.toyotabara.com/campaign/static/media/promotion_yaris.460a3bab.gif"/>
+            <meta property="og:image" content="https://www.toyotabara.com/home/wp-content/uploads/2020/12/promotion_yaris_social.gif"/>
 
             <meta property="twitter:card" content="summary_large_image"/>
             <meta property="twitter:url" content=""/>
             <meta property="twitter:title" content="ซื้อ Toyota Yaris/Ativ ทุกรุ่นวันนี้ ออกรถง่ายเพียง 800 บาท ที่ Barawindsor"/>
             <meta property="twitter:description" content="ออกรถง่ายเพียง 800 บาท เพียงซื้อ TOYOTA YARIS/ATIV ทุกรุ่นวันนี้ ที่ Toyota Barawindsor ทุกสาขา"/>
-            <meta property="twitter:image" content="https://www.toyotabara.com/campaign/static/media/promotion_yaris.460a3bab.gif"></meta>
+            <meta property="twitter:image" content="https://www.toyotabara.com/home/wp-content/uploads/2020/12/promotion_yaris_social.gifแก"></meta>
         </Helmet>
             <main>
                 {/* Banner */}
-                <img src={yarisPomote} alt="." className={styles.banner} />
+                <img src={yarisPromote} alt="." className={styles.banner} />
+                <img src={yarisPromoteMobile} alt="." className={styles.bannerMobile} />
 
                 {/* RegisterComponent */}
                 <div className={styles.goldText} id="Register">
